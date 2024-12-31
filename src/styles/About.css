@@ -1,0 +1,90 @@
+/* Sección con diseño diagonal */
+.about-diagonal {
+  position: relative;
+  background: var(--background-light);
+  padding: 4rem 2rem 0 2rem;
+  min-height: 100vh;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  z-index: 1;
+}
+
+.about-diagonal-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about-diagonal-text {
+  max-width: 50%;
+  color: var(--text-dark);
+}
+
+.about-diagonal-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.about-diagonal-title span {
+  color: var(--secondary-color);
+}
+
+.about-diagonal-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.about-diagonal-image {
+  max-width: 40%;
+}
+
+.about-diagonal-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Divisor diagonal entre secciones */
+.diagonal-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(135deg, var(--primary-color), var(--detail1));
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  z-index: 1;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .about-diagonal-wrapper {
+    flex-direction: column;
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .about-diagonal-text {
+    max-width: 100%;
+  }
+
+  .about-diagonal-title {
+    font-size: 2rem;
+  }
+
+  .about-diagonal-description {
+    font-size: 0.9rem;
+  }
+
+  .about-diagonal-image {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+}

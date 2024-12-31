@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #011c43;
+  --secondary-color: #ee217f;
+  --background-light: #f8f9fa;
+  --detail1: #6f86a8;
+  --detail2: #51ade5;
+  --text-dark: #272838;
+  --text-light: #fff;
+  --transparent-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Reseteo y configuración básica */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Base de 16px, ajustable para diseño responsivo */
+  scroll-behavior: smooth; /* Para transiciones suaves en anclas */
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif; /* Personaliza con tu fuente */
+  line-height: 1.6;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.5)
+    ),
+    radial-gradient(circle at top left, var(--text-light), transparent),
+    radial-gradient(circle at bottom right, var(--primary-color), transparent);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed; /* Para efecto de fondo fijo */
+  color: var(--text-dark); /* Color de texto base */
+  margin: 0;
+}
+
+/* Estilos globales */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Clases de utilidad */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space-navbar-pages {
+  margin-top: 5rem;
+}
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Ajuste para pantallas pequeñas */
+  }
+}
+/* icono whatsapp */
+.bxl-whatsapp {
+  color: #25d366;
+  font-size: 5rem;
+}
+.floating-logo {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.space-navbar-pages {
+  margin-top: 5rem;
+}

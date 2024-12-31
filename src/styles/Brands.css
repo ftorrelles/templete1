@@ -1,0 +1,71 @@
+/* Sección principal */
+.content-brands-modern {
+  padding: 4rem 2rem;
+  /* background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(240, 240, 255, 0.5)
+  ); */
+  background-color: var(--transparent-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.brands-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+/* Cuadrícula de marcas */
+.brands-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem; /* Espaciado entre las tarjetas */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de cada marca */
+.brand-card-modern {
+  background: var(--background-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.brand-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del logo */
+.brand-logo-modern {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Conserva las proporciones originales */
+  margin-bottom: 1rem;
+}
+
+/* Nombre de la marca */
+.brand-name-modern {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .brands-title {
+    font-size: 2rem;
+  }
+
+  .brand-name-modern {
+    font-size: 0.9rem;
+  }
+}
