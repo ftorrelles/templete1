@@ -62,22 +62,13 @@ img {
   padding: 0 1rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .space-navbar-pages {
   margin-top: 5rem;
 }
 /* Diseño responsivo */
 @media (max-width: 768px) {
   html {
-    font-size: 14px; /* Ajuste para pantallas pequeñas */
+    font-size: 15.5px; /* Ajuste para pantallas pequeñas */
   }
 }
 /* icono whatsapp */
